@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
-import Table from "../components/table/Table"
+import Table from "../components/table/Table";
+import SortButton from '../components/sortButton/SortButton';
+
 
 const Home = () => {
     const [employees, setEmployees] = useState([
@@ -582,15 +584,19 @@ const Home = () => {
     //         });
     // }, []);
 
-    console.log(employees);
-
     return (
         <div className="container">
+            <div className="row">
+           
+            </div>
+            <div className="row">
+                <SortButton />
+            </div>
             <div className="row">
                 <table className="table table-dark table-striped">
                     <thead>
                         <tr>
-                            {/* <th scope="col">Picture</th> */}
+                            <th scope="col">Picture</th>
                             <th scope="col">Name</th>
                             <th scope="col">Phone Number</th>
                             <th scope="col">Email</th>
@@ -599,7 +605,7 @@ const Home = () => {
                         </tr>
                     </thead>
                     {employees.map((employee) => (
-                        <Table key={employee.id.value} firstName={employee.name.first} lastName={employee.name.last} city={employee.location.city} state={employee.location.state} phone={employee.phone} dob={employee.dob.date} />
+                        <Table key={employee.id.value} picture={employee.picture.thumbnail} firstName={employee.name.first} lastName={employee.name.last} city={employee.location.city} state={employee.location.state} email={employee.email} phone={employee.phone} dob={employee.dob.date} />
                     ))}
                 </table>
 
