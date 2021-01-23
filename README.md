@@ -1,19 +1,26 @@
-# Unit 19 React Homework: Employee Directory
+# Employee-Directory
 
-## Overview
+## Description
+* This application is used to display a company's employees in a table using React components. Non-private information about each employee is also displayed in the table. The user can sort employees by first or last name, and can also filter which employees render with a search bar. 
 
-For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
+***
+## Installation 
+* No installation required. Simply follow this link to deployed site:
 
-## User Story
+***
+## Table of Contents
 
-* As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+1. [Acceptance Criteria](#crit)
+2. [Screenshots](#scrshot)
+3. [Technology Used](#tech)
+4. [License](#lice)
 
-## Business Context
+***
+<a name="crit"></a>
 
-An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
+## Acceptance Criteria 
 
-## Acceptance Criteria
-
+```
 Given a table of random users generated from the [Random User API](https://randomuser.me/), when the user loads the page, a table of employees should render. 
 
 The user should be able to:
@@ -21,35 +28,54 @@ The user should be able to:
   * Sort the table by at least one category
 
   * Filter the users by at least one property.
+```
+***
 
-## Commit Early and Often
+<a name="scrshot"></a>
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+## Screenshots
+![Employee Directory](./public/assets/img/burger_devour_app.png)
+![Employee Directory Sorted](./public/assets/img/burger_devour_app2.png)
+***
+[Search Field Input](https://drive.google.com/file/d/1OzP92-I6l_5MVjulVa6OL0XRR3ku-N9q/view)
+***
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+<a name="tech"></a>
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+## Technologies Used
 
-Follow these guidelines for committing:
+* HTML
+* XML
+* JavaScript
+* Bootstrap
+* jQuery
+* Node.Js
+* React
+  - React Router
+  - Axios
 
-* Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+***
+<a name="lice"></a>
 
-* Don't commit half done work, for the sake of your collaborators (and your future self!)
+## MIT License
 
-* Test your application before you commit to ensure functionality at every step in the development process
+Copyright (c) 2020 Dempsey496
 
-* We would like you to have well over 200 commits by graduation, so commit early and often!
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-* Deploy this site to GitHub Pages using the [Create React App docs for deployment.](https://create-react-app.dev/docs/deployment/#github-pages)
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-* **Important**: Be sure to push your codebase to GitHub and **NOT** your built and deployed code. Ensure this happens by following the above instructions and using the `gh-pages` branch to host the deployed application's code.
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* the URL to the deployed application
-
-* the URL to the Github repository
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
