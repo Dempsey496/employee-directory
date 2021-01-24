@@ -7,6 +7,7 @@ import Search from '../components/search/Search';
 class Home extends Component {
     state = {
         employees: [],
+        firstEmployees: [],
     }
 
     componentDidMount() {
@@ -15,7 +16,7 @@ class Home extends Component {
                 "https://randomuser.me/api/?results=40&nat=US"
             )
             .then((response) => {
-                this.setState({ employees: response.data.results });
+                this.setState({ employees: response.data.results, firstEmployees: response.data.results });
 
             })
             .catch((err) => {
@@ -27,7 +28,12 @@ class Home extends Component {
         let emps = this.state.employees;
         let search = e.toLowerCase();
         let filteredEmployees = emps.filter(emp => emp.location.state.toLowerCase().includes(search));
-        this.setState({ employees: filteredEmployees });
+        if (!search) {
+            this.setState({ employees: this.state.firstEmployees });
+        }
+        else {
+            this.setState({ employees: filteredEmployees });
+        }
     }
 
     sortByName = (e) => {
