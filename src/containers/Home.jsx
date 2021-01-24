@@ -71,7 +71,6 @@ class Home extends Component {
                                 <th scope="col">Phone</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Location</th>
-                                <th scope="col">DOB</th>
                             </tr>
                         </thead>
                         <tbody>

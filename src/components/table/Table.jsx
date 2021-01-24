@@ -9,7 +9,6 @@ const Table = (props) => {
                 <td>{phone}</td>
                 <td>{email}</td>
                 <td>{location.city}, {location.state}</td>
-                <td>{dob.date}</td>
             </tr>
     );
 };
