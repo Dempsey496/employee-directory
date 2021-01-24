@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from "axios";
 import Table from "../components/table/Table";
 import SortButtons from '../components/sortButtons/SortButtons';
-
+import Search from '../components/search/Search';
 
 class Home extends Component {
     state = {
@@ -22,7 +22,14 @@ class Home extends Component {
                 console.log(err);
             });
     };
-  
+
+    handleInputChange = (e) => {
+        let employees = this.state.employees;
+        let search = e.toLowerCase();
+        let filteredEmployees = employees.filter(employee => employee.location.state.toLowerCase().includes(search));
+        this.setState({ employees: filteredEmployees });
+    }
+
     sortByName = (e) => {
         let result = this.state.employees.sort((a, b) => {
             let aa = a.name
@@ -39,15 +46,21 @@ class Home extends Component {
         return (
             <div className="container">
                 <div className="row">
-                   <SortButtons 
-                   sortByName={this.sortByName}
-                   />
+                    <SortButtons
+                        sortByName={this.sortByName}
+                    />
+                </div>
+                <div className="row">
+                    <Search 
+                        {...this.state}
+                        handleInputChange={this.handleInputChange}
+                    />
                 </div>
                 <div className="row">
                     <table className="table table-dark table-striped">
                         <thead>
                             <tr>
-                            <th scope="col">Last</th>
+                                <th scope="col">Last</th>
                                 <th scope="col">First</th>
                                 <th scope="col">Phone</th>
                                 <th scope="col">Email</th>
