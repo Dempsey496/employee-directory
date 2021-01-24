@@ -39,7 +39,7 @@ The user should be able to:
 ### Sorted by First Name
 ![Employee Directory Sorted by First Name](/images/Sorted-First.png)
 ### Sorted By Last Name
-![Employee Directory Sorted by Last Name](/images/Sorted-First.png)
+![Employee Directory Sorted by Last Name](/images/Sorted-Last.png)
 ***
 [Search Field Input](https://drive.google.com/file/d/11Y9eenXNgMnNh_c4QaE33INUkt3MCzjl/view)
 ***
