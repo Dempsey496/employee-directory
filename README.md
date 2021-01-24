@@ -5,7 +5,7 @@
 
 ***
 ## Installation 
-* No installation required. Simply follow this link to deployed site:
+* No installation required. Simply follow this link to deployed site: [Employee Directory](https://cryptic-beyond-19091.herokuapp.com/)
 
 ***
 ## Table of Contents
@@ -34,10 +34,11 @@ The user should be able to:
 <a name="scrshot"></a>
 
 ## Screenshots
-![Employee Directory](./public/assets/img/burger_devour_app.png)
-![Employee Directory Sorted](./public/assets/img/burger_devour_app2.png)
+![Employee Directory](/images/Unsorted.png)
+![Employee Directory Sorted by First Name](./public/assets/img/burger_devour_app2.png)
+![Employee Directory Sorted by Last Name](./public/assets/img/burger_devour_app2.png)
 ***
-[Search Field Input](https://drive.google.com/file/d/1OzP92-I6l_5MVjulVa6OL0XRR3ku-N9q/view)
+[Search Field Input](https://drive.google.com/file/d/11Y9eenXNgMnNh_c4QaE33INUkt3MCzjl/view)
 ***
 
 <a name="tech"></a>
@@ -53,6 +54,8 @@ The user should be able to:
 * React
   - React Router
   - Axios
+* GH-pages
+* Heroku
 
 
 ***
