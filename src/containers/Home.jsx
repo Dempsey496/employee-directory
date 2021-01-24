@@ -12,7 +12,7 @@ class Home extends Component {
     componentDidMount() {
         axios
             .get(
-                "https://randomuser.me/api/?results=10&nat=US"
+                "https://randomuser.me/api/?results=40&nat=US"
             )
             .then((response) => {
                 this.setState({ employees: response.data.results });
@@ -24,9 +24,9 @@ class Home extends Component {
     };
 
     handleInputChange = (e) => {
-        let employees = this.state.employees;
+        let emps = this.state.employees;
         let search = e.toLowerCase();
-        let filteredEmployees = employees.filter(employee => employee.location.state.toLowerCase().includes(search));
+        let filteredEmployees = emps.filter(emp => emp.location.state.toLowerCase().includes(search));
         this.setState({ employees: filteredEmployees });
     }
 
