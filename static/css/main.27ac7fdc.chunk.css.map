@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/sortButtons/SortButtons.css"],"names":[],"mappings":"AAAA,OACI,kBAAmB,CACnB,eACJ,CAAA","file":"main.27ac7fdc.chunk.css","sourcesContent":["button {\r\n    margin-bottom: 50px;\r\n    margin-top: 50px;\r\n};\r\n\r\n"]}
