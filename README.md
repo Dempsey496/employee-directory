@@ -34,9 +34,12 @@ The user should be able to:
 <a name="scrshot"></a>
 
 ## Screenshots
+### Unsorted
 ![Employee Directory](/images/Unsorted.png)
-![Employee Directory Sorted by First Name](./public/assets/img/burger_devour_app2.png)
-![Employee Directory Sorted by Last Name](./public/assets/img/burger_devour_app2.png)
+### Sorted by First Name
+![Employee Directory Sorted by First Name](/images/Sorted-First.png)
+### Sorted By Last Name
+![Employee Directory Sorted by Last Name](/images/Sorted-First.png)
 ***
 [Search Field Input](https://drive.google.com/file/d/11Y9eenXNgMnNh_c4QaE33INUkt3MCzjl/view)
 ***
