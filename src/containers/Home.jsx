@@ -26,8 +26,8 @@ class Home extends Component {
 
     handleInputChange = (e) => {
         let emps = this.state.firstEmployees;
-        let search = e.toLowerCase();
-        let filteredEmployees = emps.filter(emp => emp.location.state.toLowerCase().match(search));
+        let search = RegExp(`^${e}`, "gi");
+        let filteredEmployees = emps.filter(emp => emp.location.state.match(search));
         if (!search) {
             this.setState({ employees: this.state.firstEmployees });
         }
